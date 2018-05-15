@@ -1,0 +1,31 @@
+* {
+box-sizing: border-box;
+
+}
+body {
+  font-family: 'Indie Flower', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+.myVideo {
+  display: block;
+
+}
+.Page {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+}
+body {
+      margin: 25px 270px;
+}
+
+.EntireP {
+  margin: 25px;
+}
+
+}
