@@ -12,7 +12,7 @@ body {
 }
 @media (min-width: 768px) {
   .MediaText {
-    color: orange;
+    color: red;
   }
 
 .myVideo {

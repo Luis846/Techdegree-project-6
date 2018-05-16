@@ -1,15 +1,15 @@
-var lines = document.getElementById('EntireP').getElementsByTagName('span');
-var Vid = document.getElementById('theVid');
-var now = Vid.currentTime;
 
+  myVid = document.getElementById("theVid");
+  spans = document.getElementsByClassName('Sp');
 
-	Vid.addEventListener('timeupdate', () => {
-		for (var i = 0, l = lines.length; i < l; i++) {
-		  if (now >= lines[i].getAttribute('data-start') &&
-		      now <= lines[i].getAttribute('data-end')) {
-		    lines[i].className = "MediaText";
-		  } else {
-		    lines[i].className = "";
-		  }
-		}
-	});
+  myVid.ontimeupdate = () => {
+
+    for(i = 0; i < spans.length; i++){
+      if (myVid.currentTime >= spans[i].dataset.start) {
+            spans[i].classList.add('MediaText');
+          }
+      if (myVid.currentTime >= spans[i].dataset.end) { 
+            spans[i].classList.remove('MediaText');
+          }
+       };
+    }
