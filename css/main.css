@@ -7,8 +7,14 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.MediaText {
+  color: orange;
+}
 @media (min-width: 768px) {
+  .MediaText {
+    color: orange;
+  }
+
 .myVideo {
   display: block;
 
@@ -20,12 +26,13 @@ body {
 }
 
 }
+
 body {
       margin: 25px 270px;
 }
 
-.EntireP {
-  margin: 25px;
+#EntireP {
+  margin-top: 40px;
 }
 
 }
